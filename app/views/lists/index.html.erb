@@ -3,3 +3,4 @@
 <% @lists.each do |l|%>
 <li> <%= link_to l.name, lists_path(l) %></li>
 <% end %>
+<%= link_to 'Create a new list', new_list_path%>
