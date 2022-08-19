@@ -1,6 +1,6 @@
 <h1>Lists#index</h1>
 <p>Find me in app/views/lists/index.html.erb</p>
 <% @lists.each do |l|%>
-<li> <%= link_to l.name, lists_path(l) %></li>
+<li> <%= link_to l.name, list_path(l) %></li>
 <% end %>
 <%= link_to 'Create a new list', new_list_path%>
